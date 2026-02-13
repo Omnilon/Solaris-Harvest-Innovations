@@ -1,43 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Solaris Harvest Innovations - Consultation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1>Solaris Harvest Innovations</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="mission.html">Mission</a></li>
-        <li><a href="leadership.html">Leadership</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="careers.html">Careers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="consult.html">Consult</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Request a Consultation</h2>
-    <p>Interested in our technology? Fill out the consultation form below and our team will reach out to you soon.</p>
-    <form>
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br>
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
-      <label for="message">Tell us about your needs:</label><br>
-      <textarea id="message" name="message" rows="5"></textarea><br>
-      <button type="submit">Submit</button>
-    </form>
-    <p>Note: This form is a placeholder; integrate with your preferred backend service to handle submissions.</p>
-  </main>
-  <footer>
-    &copy; 2025 Solaris Harvest Innovations. All rights reserved.
-  </footer>
-</body>
-</html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Solaris Harvest Innovations - Consult</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <header class="site-header">
+      <div class="topbar">
+        <div class="container topbar-content">
+          <span>Fresno, CA</span>
+          <span>(559) 555-0127</span>
+          <span>info@solarisharvest.com</span>
+        </div>
+      </div>
+      <div class="container nav-wrap">
+        <div class="logo">Solaris Harvest Innovations</div>
+        <nav><ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="mission.html">Mission</a></li>
+<li><a href="leadership.html">Leadership</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="careers.html">Careers</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="consult.html">Consult</a></li>
+</ul></nav>
+        <a class="button button--primary" href="consult.html">Plan a field assessment</a>
+      </div>
+    </header>
+      <section class="hero hero--compact" style="--hero-image: url('https://source.unsplash.com/1600x900/?sustainable,farming');">
+  <div class="container hero-content">
+    <span class="eyebrow">Consult</span>
+    <h1>Plan your solar ag roadmap.</h1>
+    <p>We will map energy, water, and yield outcomes for your acreage.</p>
+
+
+  </div>
+</section>
+      <main>
+        <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>What to expect</h2>
+          <p>A clear and respectful process from start to finish.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card"><h3>Site review</h3><p>We assess acreage, infrastructure, and energy needs.</p></div>
+<div class="card"><h3>Design plan</h3><p>Receive system layout, ROI, and incentive options.</p></div>
+<div class="card"><h3>Deployment</h3><p>Field crews install and verify performance.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container grid grid-2">
+        <div>
+          <div class="section-header">
+            <h2>Consultation request</h2>
+            <p>Tell us a bit about your goals so we can prepare for the call.</p>
+          </div>
+          <form class="form">
+            <div>
+              <label for="full-name">Full name</label>
+              <input id="full-name" type="text" placeholder="Full name">
+            </div>
+            <div>
+              <label for="company">Company</label>
+              <input id="company" type="text" placeholder="Company name">
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@email.com">
+            </div>
+            <div>
+              <label for="phone">Phone</label>
+              <input id="phone" type="tel" placeholder="Phone number">
+            </div>
+            <div>
+              <label for="interest">Primary interest</label>
+              <select id="interest">
+                <option>Agrivoltaic Design</option><option>Solar Irrigation</option><option>Farm Analytics</option><option>Operations and Maintenance</option>
+              </select>
+            </div>
+            <div>
+              <label for="budget">Estimated budget</label>
+              <select id="budget">
+                <option>Under $25k</option>
+                <option>$25k to $100k</option>
+                <option>$100k to $250k</option>
+                <option>$250k+</option>
+              </select>
+            </div>
+            <div>
+              <label for="details">Project details</label>
+              <textarea id="details" placeholder="Share timelines, objectives, and stakeholders."></textarea>
+            </div>
+            <button class="button button--primary" type="submit">Submit request</button>
+          </form>
+        </div>
+        <div>
+          <div class="section-header">
+            <h2>FAQ</h2>
+            <p>Common questions before starting.</p>
+          </div>
+          <div class="grid">
+            <div class="card"><h3>Do solar systems impact crop yields?</h3><p>We tailor designs to each crop and monitor yield impacts continuously.</p></div>
+<div class="card"><h3>Can you help with grants?</h3><p>Yes, our team identifies and supports grant applications.</p></div>
+<div class="card"><h3>What maintenance is required?</h3><p>We provide ongoing monitoring and preventative maintenance.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+      </main>
+      <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <h3>Solaris Harvest Innovations</h3>
+            <p>Solar-powered agriculture for resilient yields.</p>
+          </div>
+          <div>
+            <h4>Contact</h4>
+            <p>2410 E Tulare St, Fresno, CA 93721</p>
+            <p>(559) 555-0127<br>info@solarisharvest.com</p>
+            <p>Mon to Fri, 7:30am to 5:30pm PT</p>
+          </div>
+          <div>
+            <h4>Services</h4>
+            <ul class="list">
+              <li><a href="services.html">Agrivoltaic Design</a></li>
+<li><a href="services.html">Solar Irrigation</a></li>
+<li><a href="services.html">Farm Analytics</a></li>
+<li><a href="services.html">Operations and Maintenance</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Quick Links</h4>
+            <ul class="list">
+              <li><a href="about.html">About</a></li>
+              <li><a href="leadership.html">Leadership</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="footnote">Copyright 2026 Solaris Harvest Innovations. All rights reserved.</p>
+      </div>
+    </footer>
+    </body>
+    </html>
