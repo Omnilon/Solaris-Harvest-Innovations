@@ -4,10 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Solaris Harvest Innovations | Contact</title>
+  <meta name="telegram-endpoint" content="https://YOUR_TELEGRAM_PROXY_ENDPOINT">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" href="assets/favicon.png">
 </head>
-<body class="page-contact">
+<body class="page-contact" data-site="Solaris Harvest Innovations">
   <header class="site-header">
     <div class="brand"><img class="brand-logo" src="assets/logo.png" alt="Solaris Harvest logo">Solaris Harvest</div>
     <nav class="primary-nav">
@@ -34,7 +35,7 @@
 </section>
 <section>
   <div class="section-head"><h2>Send a note</h2></div>
-  <form class="form-grid">
+  <form class="form-grid js-telegram-form" data-form="contact">
     <input type="text" placeholder="Name">
     <input type="email" placeholder="Email">
     <input type="text" placeholder="Farm name">
@@ -59,5 +60,6 @@
       Research greenhouse tours by appointment
     </div>
   </footer>
+  <script src="telegram-form.js" defer></script>
 </body>
 </html>
