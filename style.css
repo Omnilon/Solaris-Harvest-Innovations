@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Lora:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Outfit:wght@300;400;600&display=swap');
 
 :root {
   --forest: #2f5d3b;
@@ -11,32 +11,26 @@
 }
 
 * { box-sizing: border-box; }
-body { margin: 0; font-family: 'Poppins', sans-serif; background: linear-gradient(180deg, #f2f7f1 0%, #ffffff 60%); color: var(--ink); }
+body { margin: 0; font-family: 'Outfit', sans-serif; background: linear-gradient(180deg, #f2f7f1 0%, #ffffff 60%); color: var(--ink); }
 a { color: inherit; text-decoration: none; }
 .wrap { width: min(1120px, 92vw); margin: 0 auto; }
 
-.header { background: #fff; border-bottom: 1px solid var(--border); }
+.header { background: #fff; border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
 .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; gap: 20px; }
-.logo { font-family: 'Lora', serif; font-size: 1.5rem; }
+.logo { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; }
 .nav-links { display: flex; gap: 16px; flex-wrap: wrap; color: var(--muted); }
+
+.story { scroll-snap-type: y mandatory; }
+.panel { min-height: 100vh; scroll-snap-align: start; padding: 80px 0; }
+.panel.alt { background: #fff; }
 
 .hero {
   position: relative;
-  padding: 80px 0 100px;
   background: linear-gradient(120deg, rgba(47,93,59,0.9), rgba(47,93,59,0.6)), url('https://source.unsplash.com/1600x900/?solar,agriculture,field') center/cover no-repeat;
   color: #fff;
 }
-.hero::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -1px;
-  height: 80px;
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120"><path fill="%23f2f7f1" d="M0,64L60,64C120,64,240,64,360,74.7C480,85,600,107,720,101.3C840,96,960,64,1080,48C1200,32,1320,32,1380,32L1440,32L1440,120L1380,120C1320,120,1200,120,1080,120C960,120,840,120,720,120C600,120,480,120,360,120C240,120,120,120,60,120L0,120Z"/></svg>') bottom/cover no-repeat;
-}
 
-.hero h1 { font-family: 'Lora', serif; font-size: clamp(2.4rem, 4vw, 3.6rem); margin: 0 0 12px 0; }
+.hero h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.6rem, 4vw, 3.8rem); margin: 0 0 12px 0; }
 .hero p { color: rgba(255,255,255,0.85); }
 
 .button { display: inline-block; background: var(--sun); color: #fff; padding: 10px 18px; border-radius: 999px; font-weight: 600; transition: transform 0.3s ease; }
@@ -46,11 +40,8 @@ a { color: inherit; text-decoration: none; }
 .section.alt { background: #fff; }
 .grid-3 { display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 
-.card { background: #fff; border: 1px solid var(--border); border-radius: 22px; padding: 22px; box-shadow: 0 16px 30px rgba(47,93,59,0.12); transition: transform 0.3s ease; }
-.card:hover { transform: translateY(-6px); }
+.card { background: #fff; border: 1px solid var(--border); border-radius: 22px; padding: 22px; box-shadow: 0 16px 30px rgba(47,93,59,0.12); }
 .card ul { margin: 12px 0 0; padding-left: 18px; color: var(--muted); }
-
-.tile { background: #fff; border: 1px solid var(--border); border-radius: 18px; padding: 18px; }
 
 .icon-tile { display: grid; gap: 10px; align-items: center; justify-items: start; padding: 18px; border-radius: 18px; background: rgba(123,191,106,0.12); }
 .icon { width: 42px; height: 42px; border-radius: 50%; background: var(--mint); animation: float 4s ease-in-out infinite; }
@@ -69,7 +60,7 @@ a { color: inherit; text-decoration: none; }
 input, textarea, select { width: 100%; padding: 10px 12px; border-radius: 12px; border: 1px solid var(--border); font-family: inherit; }
 textarea { min-height: 120px; }
 
-.footer { background: var(--forest); color: #fff; padding: 50px 0 30px; }
+.footer { background: var(--forest); color: #fff; padding: 40px 0 20px; }
 .footer .grid-4 { display: grid; gap: 24px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
 .footer p { color: rgba(255,255,255,0.75); }
 
