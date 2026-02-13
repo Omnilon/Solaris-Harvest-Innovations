@@ -44,6 +44,16 @@ a {
   font-size: 22px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 .primary-nav {
